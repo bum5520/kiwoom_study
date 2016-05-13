@@ -1,5 +1,6 @@
 import sys
-from PyQt4.QtGui import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 
 
 class MainWindow(QMainWindow):
@@ -10,7 +11,7 @@ class MainWindow(QMainWindow):
         """
         self.setWindowTitle("Study for stock")
         self.setGeometry(300,400,300,300)
-        button1 = QPushButton('pycharm',self)
+        button1 = QPushButton('click me',self)
         button1.move(100,100)
         button1.clicked.connect(self.button1_clicked)
 
